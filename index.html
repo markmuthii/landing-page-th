@@ -4,18 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+
+    <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Import Roboto font from Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- Navigation Bar -->
     <nav class="navigation">
+      <!-- Logo -->
       <img src="./assets/images/logo.png" width="70px" />
+
+      <!-- Navigation Links -->
       <ul class="links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -23,10 +32,13 @@
         <li><a href="#">Contact</a></li>
         <li><a href="#">Blog</a></li>
       </ul>
+
+      <!-- Call-to-Action Button -->
       <button class="button">
         Get Started
-        <span
-          ><svg
+        <span>
+          <!-- SVG Icon for Button -->
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -44,6 +56,7 @@
         </span>
       </button>
 
+      <!-- Mobile Menu Icon -->
       <div class="menu-icon">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -63,11 +76,15 @@
       </div>
     </nav>
 
+    <!-- Main Content -->
     <main>
+      <!-- Hero Section -->
       <section class="hero">
+        <!-- Left Side of Hero Section -->
         <div class="hero-left">
           <div class="overlay"></div>
           <div>
+            <!-- Hero Text -->
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
               tempora at! Illo doloremque a tempora quibusdam perspiciatis!
@@ -75,13 +92,17 @@
               aut delectus perspiciatis ad accusantium?
             </p>
 
+            <!-- Hero Buttons -->
             <div>
               <button>First</button>
               <button>Second</button>
             </div>
           </div>
         </div>
+
+        <!-- Right Side of Hero Section -->
         <div class="hero-right">
+          <!-- Hero Image -->
           <img
             src="https://t4.ftcdn.net/jpg/04/03/62/35/360_F_403623508_OhrbkZ1zc2NzB9mN1d2ZcO1WrBDGKsxY.jpg"
             alt=""
@@ -90,6 +111,7 @@
       </section>
     </main>
 
+    <!-- Link to External JavaScript File -->
     <script src="script.js"></script>
   </body>
 </html>
