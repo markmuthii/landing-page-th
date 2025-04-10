@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -12,7 +13,12 @@ li {
   list-style: none;
 }
 
+section {
+  padding: 50px 20px;
+}
+
 .navigation {
+  box-shadow: 2px 2px 40px rgb(202, 202, 202);
   padding: 15px 12px;
   display: flex;
   justify-content: space-between;
@@ -24,7 +30,7 @@ li {
   display: none;
 }
 
-.button {
+button {
   background-color: green;
   color: white;
   padding: 10px 20px;
@@ -32,9 +38,42 @@ li {
   transition-duration: 300ms;
 }
 
-.button:hover {
+button:hover {
   background-color: rgb(0, 150, 0);
   cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero-right {
+  display: none;
+}
+
+.hero-left {
+  background-image: url("https://t4.ftcdn.net/jpg/04/03/62/35/360_F_403623508_OhrbkZ1zc2NzB9mN1d2ZcO1WrBDGKsxY.jpg");
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-left div:last-child {
+  z-index: 1;
+}
+
+.hero-left p {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -50,6 +89,32 @@ li {
   }
 
   .menu-icon {
+    display: none;
+  }
+
+  /* HERO SECTION */
+
+  .hero {
+    display: flex;
+  }
+
+  .hero > div {
+    width: 50%;
+  }
+
+  .hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-left {
+    background-image: none;
+    color: black;
+    text-align: left;
+  }
+
+  .overlay {
     display: none;
   }
 }
